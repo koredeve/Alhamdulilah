@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alhamdulillah</title>
+  <style>
+    body {
+      font-family: "Arabic Calligraphy", cursive;
+      text-align: center;
+      background-color: #F5F5F5;
+    }
+
+    h1 {
+      font-size: 5em;
+      color: #007bff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Alhamdulillah</h1>
+  <button onclick="showAlhamdulillah()" id="show">Show Alhamdulillah</button>
+
+  <script>
+    let show=true
+    function showAlhamdulillah() {
+    const h1Element = document.querySelector('h1');
+    const btn = document.getElementById('show');
+    show = !show
+    if(show){
+
+        h1Element.style.opacity = 0;
+       btn.innerText = 'Show Alhamdulillah';
+    } else{
+        h1Element.style.opacity = 1
+        btn.innerText = 'Hide Alhamdulillah';
+    }
+
+
+    }
+  </script>
+</body>
+</html>
